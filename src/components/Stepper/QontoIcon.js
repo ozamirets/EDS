@@ -1,6 +1,6 @@
-import {styled} from "@mui/material/styles";
-import Check from "@mui/icons-material/Check";
-import PropTypes from "prop-types";
+import {styled} from '@mui/material/styles';
+import Check from '@mui/icons-material/Check';
+import PropTypes from 'prop-types';
 
 const QontoStepIconRoot = styled('div')(({theme, ownerState}) => ({
     color: 'primary.dark',

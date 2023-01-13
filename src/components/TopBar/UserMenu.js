@@ -1,5 +1,6 @@
 import {Box, IconButton, Menu, MenuItem, Tooltip, Typography} from '@mui/material';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import PropTypes from 'prop-types';
 
 const settings = ['Profile', 'Account', 'Logout'];
 
@@ -40,6 +41,13 @@ const UserMenu = ({open, onClose, anchorEl, onOpen}) => (
         </Menu>
     </Box>
 );
+
+UserMenu.propTypes = {
+    open: PropTypes.bool,
+    onClose: PropTypes.func,
+    anchorEl: PropTypes.object,
+    onOpen: PropTypes.func
+};
 
 export default UserMenu;
 
